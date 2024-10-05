@@ -1,0 +1,40 @@
+%!TEX root = ../main.tex
+
+\newcommand{\degreePhrase}{for the}
+\newcommand{\lecturePhrase}{for the lecture}
+\newcommand{\departmentPhrase}{Course of study:}
+\newcommand{\locationUniversityPhrase}{}
+\newcommand{\documentAuthorPhrase}{Name}
+\newcommand{\documentAuthorAddress}{Address}
+\newcommand{\documentAuthorCity}{City}
+\newcommand{\releasePhrase}{Submission date}
+\newcommand{\documentPeriodPhrase}{Time of Project}
+\newcommand{\matriculationNumberPhrase}{Student ID}
+\newcommand{\coursePhrase}{Course}
+\newcommand{\location}{Location}
+\newcommand{\currentDate}{Date}
+\newcommand{\companyPhrase}{Company}%
+
+\newcommand{\tutorPhrase}{Tutor}
+
+\newcommand{\evaluatorPhrase}{Supervisor}
+\newcommand{\restrictionNoticesPhrase}{Confidentiality Statement} %Restriction Notice}
+\newcommand{\declarationPhrase}{Author's declaration}
+\newcommand{\acknowledgmentsPhrase}{Acknowledgments}
+\newcommand{\glossaryPhrase}{Glossary}
+\newcommand{\langabkverz}{Acronyms}
+\newcommand{\langabstract}{Abstract}
+\newcommand{\appendixPhrase}{Appendix}
+\newcommand{\listingPhrase}{Listing}
+\newcommand{\listListingPhrase}{Listings}
+\newcommand{\authorListingPhrase}{Listing}
+\newcommand{\acronymsPhrase}{Acronyms}
+
+\newcommand{\documentTypePhrase}{%
+  \IfStrEqCase{\documentType}{%
+      {T}{Term Paper}%
+      {S}{Seminar Paper}%
+      {B}{Bachelor Thesis}%
+      {M}{Master Thesis}%
+  }[{\documentType\ignorespaces}]
+}

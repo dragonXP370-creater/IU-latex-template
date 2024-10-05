@@ -1,0 +1,36 @@
+%!TEX root = ../main.tex
+
+\thispagestyle{empty}
+
+\section*{\declarationPhrase}
+
+\vspace*{2em}
+
+\iflang{de}{%
+  Hiermit \ifMultipleAuthors{versichern wir}{versichere ich}, dass \ifMultipleAuthors{wir unsere}{ich meine}
+  {\documentTypePhrase} mit dem Thema {\itshape \documentTitle }
+  selbstständig und ohne Inanspruchnahme fremder Hilfe angefertigt \ifMultipleAuthors{haben}{habe}.
+  \ifMultipleAuthors{Wir haben}{Ich habe} dabei nur die angegebenen Quellen und Hilfsmittel verwendet und die aus dieses wörtlich oder inhaltlich entnommenen Stellen als solche kenntlich gemacht.
+  Die Arbeit hat in gleicher oder ähnlicher FOrm noch keiner andere Prüfungsbehörde vorgelegen. 
+  \ifMultipleAuthors{Wir erklären uns}{Ich erkläre mich} damit einverstanden, dass die Arbeit mit Hilfe eines Plagiatserkennungsdiensts auf enthaltene Plagiate überpürft wird.
+}
+
+
+\iflang{en}{%
+  Hereby \ifMultipleAuthors{we}{I} declare that \ifMultipleAuthors{we have}{I have} independently and without the assistance of others
+  produced this {\documentTypePhrase}, titled {\itshape \documentTitle}. 
+  \ifMultipleAuthors{We have}{I have} only used the sources and resources listed, and marked any passages taken directly or indirectly from other sources as such.
+  This work has neither in whole nor in part been submitted to any other examination body in this form or any similar form.
+  \ifMultipleAuthors{We consent}{I consent} to this work being checked for plagiarism using a plagiarism detection service.
+}
+
+\vspace{3em}
+
+\begin{spacing}{1.2}
+  \begin{tabbing}
+    mmmmmmmmmmmmmmmmmmmmmmmmmm             \= \kill
+    \rule{6cm}{0.4pt} \>   \rule{6cm}{0.4pt}\\
+    \location, \currentDate  \>  \documentAuthor\\
+  
+  \end{tabbing}
+\end{spacing}

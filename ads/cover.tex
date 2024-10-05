@@ -1,0 +1,58 @@
+%!TEX root = ../main.tex
+
+\begin{titlepage}
+	\begin{center}
+		\includegraphics[height=5cm]{images/cover/iu_Logo_D_black_RGB_horizontal.jpg}
+	\end{center}
+	\enlargethispage{20mm}
+	\begin{center}
+
+		\vspace*{12mm}	{\large\textbf {\documentTypePhrase}}\\
+
+		\IfStrEq{\showLecture}{true}{
+			\vspace*{12mm}	\lecturePhrase\\
+			\vspace*{0mm}		{\textbf \lecture}\\
+		}
+
+		\vspace*{12mm}	 \locationUniversity{} \studyType\\
+		\vspace*{0mm}	\departmentPhrase{} \department\\
+
+		\doublespacing{
+			\vspace*{12mm}	{\LARGE\textbf \documentTitle }}\\
+		
+		%\vspace*{12mm}	\documentAuthorPhrase\\
+		%\vspace*{3mm}		{\large\textbf \documentAuthor}\\
+		%\vspace*{12mm} \releasePhrase\\
+		%\vspace*{3mm}	\releaseDate\\
+	\end{center}
+	\vfill
+	\begin{spacing}{1.2}
+		\begin{tabbing}
+			mmmmmmmmmmmmmmmmmmmmmmmmmm             \= \kill
+            
+			% uncomment next line for periodPhase
+			% \textbf{\documentPeriodPhrase}       \>  \documentPeriod\\
+			\textbf{\documentAuthorPhrase} \>   \documentAuthor\\
+			\textbf{\documentAuthorAddress}  \>  \authorStreet~\authorStreetNr\\
+			\textbf{\documentAuthorCity}  \>  \authorPostageNumber~\authorCity\\
+			\textbf{\matriculationNumberPhrase}  \>  \matriculationNumber\\
+
+			\\ % Fügt eine leere Zeile ein
+
+			% \textbf{\tutorPhrase}               \>  \tutor\\
+			\textbf{\evaluatorPhrase}              \>  \evaluator\\
+
+			\\ % Fügt eine leere Zeile ein
+
+			\textbf{\releasePhrase}  \>  \releaseDate\\
+
+			\\ % Fügt eine leere Zeile ein
+
+			\ifUseCompany{%
+			\textbf{\companyPhrase}                  \>  \companyName, \companyLocation\\%
+			}
+
+			
+		\end{tabbing}
+	\end{spacing}
+\end{titlepage}

@@ -1,0 +1,119 @@
+%!TEX root = ./main.tex
+% arara: pdflatex
+% arara: makeglossaries if changed('glo')
+% arara: biber if changed(toFile('bibliographie.bib')) || changed('bcf')
+% arara: pdflatex while changed('bbl') || changed('gls') || found('log', 'Please rerun') || found('log', 'Label(s) may have changed')
+
+%%**************************************************************
+%%
+%% IU Internationale Hochschule - Template for Thesis
+%%
+%% Bevor usisng this template please have a look at the REAMDME.md file
+%%
+%%**************************************************************
+
+\input{ads/header}
+
+\input{content/glossary}
+
+\begin{document}
+
+% Cover
+\begin{spacing}{1}
+  \input{ads/cover}
+\end{spacing}
+\newpage
+
+\pagenumbering{Roman}
+
+% Restriction notices
+\ifUseCompany{%
+  \input{ads/restrictionNotices}
+  \newpage
+}%
+
+% Aknowldgements
+\ifUseAcknowledments{%
+  \input{ads/acknowledments}
+  \newpage
+}%
+
+% Abstract
+\input{content/abstract}
+\newpage
+
+% only page number in footer
+\pagestyle{plain}
+
+% space bevore chapter headline
+\RedeclareSectionCommand[beforeskip=\chapterMargin]{chapter}
+
+% Contents
+\begin{spacing}{1.1}
+\begingroup
+
+% set subchapter depth
+\setcounter{tocdepth}{2}
+
+\tableofcontents
+\clearpage
+\endgroup
+\end{spacing}
+\newpage
+
+% Acronyms
+\cleardoublepage
+\input{content/acronyms}
+
+% List of Figures
+\cleardoublepage
+\listoffigures
+
+%List of Tables
+\cleardoublepage
+\listoftables
+
+% List of Listings
+\cleardoublepage
+\lstlistoflistings
+\cleardoublepage
+
+\pagenumbering{arabic}
+
+\pagestyle{headings}
+
+
+%Content
+\foreach \i in {01,02,03,04,05,06,07,08,09,...,99} {%
+    \edef\FileName{content/chapter/\i .tex}%
+    \IfFileExists{\FileName}{%
+      \input{\FileName}
+    }
+    {%
+      %				No chapter available
+    }
+  }
+
+\clearpage
+
+% Bibilography
+\cleardoublepage
+\printbibliography
+
+% Glossar
+\cleardoublepage
+\printglossary[style=altlist,title=\glossaryPhrase]
+\input{content/glossary}
+
+% Appendix
+\clearpage
+\appendix
+\input{content/appendix}
+
+% Declaration
+\clearpage
+\input{ads/declaration}
+\newpage
+
+
+\end{document}

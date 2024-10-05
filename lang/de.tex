@@ -1,0 +1,39 @@
+%!TEX root = ../main.tex
+
+\newcommand{\degreePhrase}{für die Prüfung zum}
+\newcommand{\lecturePhrase}{für die Vorlesung}
+\newcommand{\departmentPhrase}{Studiengang:}
+\newcommand{\locationUniversityPhrase}{}
+\newcommand{\documentAuthorPhrase}{Name}
+\newcommand{\documentAuthorAddress}{Adresse}
+\newcommand{\documentAuthorCity}{Stadt}
+\newcommand{\releasePhrase}{Abgabedatum}
+\newcommand{\documentPeriodPhrase}{Bearbeitungszeitraum}
+\newcommand{\matriculationNumberPhrase}{Matrikelnummer}
+\newcommand{\coursePhrase}{Kurs}
+\newcommand{\location}{Ort}
+\newcommand{\currentDate}{Datum}
+\newcommand{\companyPhrase}{Unternehmen}%
+
+\newcommand{\tutorPhrase}{Tutor}
+
+\newcommand{\evaluatorPhrase}{Betreuer}
+\newcommand{\restrictionNoticesPhrase}{Sperrvermerk}
+\newcommand{\declarationPhrase}{Eidesstattliche Erklärung}
+\newcommand{\acknowledgmentsPhrase}{Danksagung}
+\newcommand{\glossaryPhrase}{Glossar}
+\newcommand{\appendixPhrase}{Anhang}
+\newcommand{\listingPhrase}{Listing}
+\newcommand{\listListingPhrase}{Listings}
+\newcommand{\authorListingPhrase}{Listing}
+\newcommand{\acronymsPhrase}{Abkürzungsverzeichnis}
+
+% Abkürzungen basieren auf der Englischen Schreibweise
+\newcommand{\documentTypePhrase}{%
+  \IfStrEqCase{\documentType}{%
+      {T}{Hausarbeit}%
+      {S}{Seminararbeit}%
+      {B}{Bachelorarbeit}%
+      {M}{Masterarbeit}%
+  }[{\documentType\ignorespaces}]
+}
