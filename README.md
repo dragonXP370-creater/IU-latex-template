@@ -49,28 +49,34 @@ In der Datei main.tex sind grundlegende Einstellungen vordefiniert, welche nicht
 
 In der Datei document.tex müssen einige Angaben über die zu schreibende Arbeit gemacht werden:
 
-| Variable            | Beschreibung                                           | Mögliche Werte                                                                                                                                                                                                       |
-| ------------------- | ------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| documentLanguage    | Sprache der Arbeit                                     | de<br/> en                                                                                                                                                                                                           |
-| documentType        | Art der Arbeit                                         | T2\\_1000 Projektarbeit (Semester 1 & 2) <br/> T2\\_2000 Projektarbeit (Semester 3 & 4) <br/> T2\\_3100 Studienarbeit (Semester 5) <br/> T2\\_3300 Bachelorarbeit <br/> Für andere Arbeiten den Typ direkt eintragen |
-| multipleAuthors     | Wurde die Arbeit von mehreren Autoren verfasst?        | true<br/> false                                                                                                                                                                                                      |
-| documentAuthor      | Autor der Arbeit                                       |                                                                                                                                                                                                                      |
-| documentTitle       | Titel der Arbeit                                       |                                                                                                                                                                                                                      |
-| documentPeriod      | Dauer der Arbeit                                       |                                                                                                                                                                                                                      |
-| matriculationNumber | Matrikelnummer des Autors                              |                                                                                                                                                                                                                      |
-| locationUniversity  | Standort der DHBW                                      | Heidenheim                                                                                                                                                                                                           |
-| department          | Fakultät der DHBW in der sich der Autor befindet       |                                                                                                                                                                                                                      |
-| course              | Kurs in dem sich der Autor befindet                    |                                                                                                                                                                                                                      |
-| degree              | Abschluss, welcher mit dieser Arbeit angestrebt wird   | Bachelor of Science (INF2014-MI - INF2016-MI) <br/> Bachelor of Engineering (INF2014-IA/IM - INF2016-IA/IM) <br/> Bachelor of Science  (INF2017-IM/MI/IA)                                                            |
-| lecture             | Vorlesung, für die die Arbeit geschrieben wurde        |                                                                                                                                                                                                                      |
-| showLecture         | Ob die Vorlesung auf dem Deckblatt gezeigt werden soll | true <br/> false                                                                                                                                                                                                     |
-| releaseDate         | Abgabedatum                                            |                                                                                                                                                                                                                      |
-| releaseLocation     | Abgabeort                                              | Heidenheim                                                                                                                                                                                                           |
-| companyName         | Name des Unternehmens in dem der Autor angestellt ist  |                                                                                                                                                                                                                      |
-| companyLocation     | Firmensitz                                             |                                                                                                                                                                                                                      |
-| tutor               | Betrieblicher Betreuer der Arbeit                      |                                                                                                                                                                                                                      |
-| evaluator           | Zweitkorrektor der Arbeit                              |                                                                                                                                                                                                                      |
-| linkColor           | Farbe von Verlinkungen                                 | 000000 (schwarz)                                                                                                                                                                                                     |
+| Variable             | Beschreibung                                           | Mögliche Werte                                                                                                                                                                                                        |
+| -------------------- | ----------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `documentLanguage`    | Sprache der Arbeit                                     | `de` <br/> `en`                                                                                                                                                                                                       |
+| `documentType`        | Art der Arbeit                                         | `T` Hausarbeit <br/> `S` Seminararbeit <br/> `B` Bachelorarbeit <br/> `M` Masterarbeit <br/> Für andere Arbeiten den Typ direkt eintragen                                                                              |
+| `multipleAuthors`     | Wurde die Arbeit von mehreren Autoren verfasst?        | `true` <br/> `false`                                                                                                                                                                                                  |
+| `documentAuthor`      | Autor der Arbeit                                       |                                                                                                                                                                                                                       |
+| `authorStreet`        | Straße des Autors                                      |                                                                                                                                                                                                                       |
+| `documentStreetNr`    | Hausnummer des Autors                                  |                                                                                                                                                                                                                       |
+| `authorPostageNumber` | Postleitzahl des Autors                                |                                                                                                                                                                                                                       |
+| `authorCity`          | Stadt des Autors                                       |                                                                                                                                                                                                                       |
+| `documentTitle`       | Titel der Arbeit                                       |                                                                                                                                                                                                                       |
+| `documentPeriod`      | Dauer der Arbeit                                       |                                                                                                                                                                                                                       |
+| `matriculationNumber` | Matrikelnummer des Autors                              |                                                                                                                                                                                                                       |
+| `locationUniversity`  | Standort der Universität                               | Internationale Hochschule                                                                                                                                                                                             |
+| `department`          | Fakultät der IU, in der sich der Autor befindet        |                                                                                                                                                                                                                       |
+| `course`              | Kurs, in dem sich der Autor befindet                   |                                                                                                                                                                                                                       |
+| `degree`              | Abschluss, der mit dieser Arbeit angestrebt wird       | `Bachelor of Name` <br/> `Master of Name`                                                                                                                                                                              |
+| `lecture`             | Vorlesung, für die die Arbeit geschrieben wurde        |                                                                                                                                                                                                                       |
+| `showLecture`         | Ob die Vorlesung auf dem Deckblatt gezeigt werden soll | `true` <br/> `false`                                                                                                                                                                                                  |
+| `releaseDate`         | Abgabedatum                                            |                                                                                                                                                                                                                       |
+| `releaseLocation`     | Abgabeort                                              | `Online`                                                                                                                                                                                                              |
+| `useCompany`          | Ob die Arbeit in Kooperation mit einem Unternehmen erfolgt ist | `true` <br/> `false`                               |                                                                                                                                                                                                                       |
+| `companyName`         | Name des Unternehmens                                  |                                                                                                                                                                                                                       |
+| `companyLocation`     | Firmensitz                                             |                                                                                                                                                                                                                       |
+| `tutor`               | Tutor der Arbeit                                       |                                                                                                                                                                                                                       |
+| `evaluator`           | Betreuer der Arbeit                                    |                                                                                                                                                                                                                       |
+| `linkColor`           | Farbe von Verlinkungen                                 | `000000` (schwarz)                                                                                                                                                                                                    |
+
 
 ### content
 
@@ -81,19 +87,22 @@ In der Datei document.tex müssen einige Angaben über die zu schreibende Arbeit
 
 Das Template bietet die folgenden verschiedenen Document Types an:
 
-* T2_1000 Project Thesis (Semester 1 & 2)
-* T2_2000 Project Thesis (Semester 3 & 4)
-* T2_3100 Seminar Paper (Semester 5 & 6)
-* T2_3300 Bachelor Thesis
+* T Term Paper
+* S Seminar Paper
+* B Bachelor Thesis
+* M Master Thesis
 * Sonstige
 
 Das Template passt alle relevanten Einstellungen automatisch an, sobald der Document Type geändert wird.
 
 ## Document Type spezifische Besonderheiten
 
-### T2_3100
+### UseCompany
 
-Die Studienarbeit ist eine reine Hochschularbeit. Aus diesem Grund wird der Ort der Firma und der Sperrvermerk entfernt. Desweiteren ist es möglich die Studienarbeit als Gruppe abzugeben. Hierfür gibt es die Variable multipleAuthors. Ist diese auf true gesetzt, passt sich die Eigenständigkeitserklärungs selbst von der Ich- zur Wir-Form an. Mehrere Autoren sind lediglich mit Komma getrent in die Variable documentAuthor einzutragen.
+Wird die Arbeit in Kooperation mit einem Unternehmen geschrieben, wird der Ort der Firma und ein Sperrvermerk eingefügt. 
+
+### MultipleAuthors
+Es ist auch möglich, dass mehrere Autoren an einer Arbeit schreiben. Hierfür gibt es die Variable multipleAuthors. Ist diese auf true gesetzt, passt sich die Eigenständigkeitserklärungs selbst von der Ich- zur Wir-Form an. Mehrere Autoren sind lediglich mit Komma getrent in die Variable documentAuthor einzutragen.
 
 ### Sonstige
 Für andere als die vordefinierten Types kann der Dokumenttyp direkt in das Feld `documentType` eingetragen werden (z.B. Hausarbeit). Unternehmensinformationen werden dann ausgeblendet.
