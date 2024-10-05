@@ -1,4 +1,4 @@
-# IU Internationale Hochschule LaTeX Template
+# IU Internationale Hochschule LaTeX Template (inoffiziell)
 
 Template auf Basis von  [DHBW Mosbach LaTeX Template](https://github.com/Siphalor/dhbw-mosbach-latex-template)
 
