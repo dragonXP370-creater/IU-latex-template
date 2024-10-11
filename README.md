@@ -1,8 +1,8 @@
-# DHBW Mosbach LaTeX Template
+# IU Internationale Hochschule LaTeX Template (inoffiziell)
 
 Template auf Basis von  [DHBW Mosbach LaTeX Template](https://github.com/Siphalor/dhbw-mosbach-latex-template)
 
-Angepasst and die IU Internationale Hochschule
+Angepasst an die Anforderungen der IU Internationale Hochschule
 
 **Inhalt:**
 * [Templatestruktur](#templatestruktur)
