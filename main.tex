@@ -1,5 +1,4 @@
 %!TEX root = ./main.tex
-%!TEX program = xelatex
 % arara: pdflatex
 % arara: makeglossaries if changed('glo')
 % arara: biber if changed(toFile('bibliographie.bib')) || changed('bcf')
@@ -40,8 +39,8 @@
 }%
 
 % Abstract
-%\input{content/abstract}
-%\newpage
+\input{content/abstract}
+\newpage
 
 % only page number in footer
 \pagestyle{plain}
@@ -112,9 +111,9 @@
 \input{content/appendix}
 
 % Declaration
-%\clearpage
-%\input{ads/declaration}
-%\newpage
+\clearpage
+\input{ads/declaration}
+\newpage
 
 
 \end{document}
