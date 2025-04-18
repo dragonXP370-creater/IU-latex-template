@@ -22,8 +22,8 @@
 ]{scrreprt}	                     % Koma-Script report-class, long document: scrreprt, short document: scrbook
 
 \usepackage{xstring}
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
+\usepackage[Renderer=Basic]{fontspec}
+\setmainfont{Arial}
 
 % iflang command definition
 \newcommand{\iflang}[2]{%
@@ -87,9 +87,8 @@
 \usepackage[autostyle=true,german=quotes]{csquotes}
 \usepackage{longtable}
 \usepackage{enumitem}
-\usepackage{graphicx}
-\usepackage{pdfpages}
-\usepackage{xcolor}
+\usepackage[xetex]{graphicx}
+\usepackage[xetex]{xcolor}
 \usepackage{float}
 \usepackage{array}
 \usepackage{calc}
@@ -104,7 +103,6 @@
 \usepackage{lscape}
 \usepackage{amsmath}
 \usepackage{amssymb}
-\usepackage{\documentFont}
 \usepackage[%
 	pdftitle={\documentTitle},
 	pdfauthor={\documentAuthor},

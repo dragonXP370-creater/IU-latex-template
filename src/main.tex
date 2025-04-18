@@ -1,4 +1,5 @@
 %!TEX root = ./main.tex
+%!TEX program = xelatex
 % arara: pdflatex
 % arara: makeglossaries if changed('glo')
 % arara: biber if changed(toFile('bibliographie.bib')) || changed('bcf')
@@ -11,7 +12,6 @@
 %% Bevor usisng this template please have a look at the REAMDME.md file
 %%
 %%**************************************************************
-
 \input{ads/header}
 
 \input{content/glossary}
