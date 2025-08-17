@@ -2,13 +2,19 @@
 
 Template auf Basis von  [DHBW Mosbach LaTeX Template](https://github.com/Siphalor/dhbw-mosbach-latex-template)
 
-Angepasst an die Anforderungen der IU Internationale Hochschule
+Orientiert an dem Leitfaden der IU Internationalen Hochschule. <br>
+Dieses Template enthält keine Garantie, dass es korrekt ist.
 
 **Inhalt:**
+* [Installation](#installation)
 * [Templatestruktur](#templatestruktur)
 * [Document Types](#document-types)
 * [Komponenten einer Wissenschaftlichen Arbeit](#komponenten-einer-wissenschaftlichen-arbeit)
 * [Contributors](#contributors)
+
+## Installation
+1. Download and install TeX Live from here [Tex Live](https://tug.org/texlive/)
+
 
 ## Templatestruktur
 

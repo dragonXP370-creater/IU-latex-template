@@ -30,26 +30,66 @@
 	\IfStrEq{\documentLanguage}{#1}{#2}{}%
 }
 
-% ifDocType comand definition
 \newcommand{\ifDocType}[3]{%
 	\IfStrEq{\documentType}{#1}{#2}{#3}%
 }
 
-% ifMultipleAuthors definition
 \newcommand{\ifMultipleAuthors}[2]{%
 	\IfStrEq{\multipleAuthors}{true}{#1}{#2}%
 }
 
-% ifUseCompany definition
-\newcommand{\ifUseCompany}[2]{%
-	\IfStrEq{\useCompany}{true}{#1}{#2}%
+\newcommand{\ifShowCompany}[2]{%
+	\IfStrEq{\showCompany}{true}{#1}{#2}%
 }
 
-% ifUseAcknowledgements definition
-\newcommand{\ifUseAcknowledments}[2]{%
-	\IfStrEq{\useAcknowledments}{true}{#1}{#2}%
+\newcommand{\ifShowAcknowledments}[2]{%
+	\IfStrEq{\showAcknowledments}{true}{#1}{#2}%
 }
 
+\newcommand{\ifShowTutor}[2]{%
+	\IfStrEq{\showTutor}{true}{#1}{#2}%
+}
+
+\newcommand{\ifShowEvaluator}[2]{%
+	\IfStrEq{\showEvaluator}{true}{#1}{#2}%
+}
+
+\newcommand{\ifShowDocumentPeriod}[2]{%
+	\IfStrEq{\showDocumentPeridod}{true}{#1}{#2}%
+}
+
+
+\newcommand{\ifShowAbstract}[2]{%
+    \IfStrEq{\showAbstract}{true}{#1}{#2}%
+}
+
+\newcommand{\ifShowAcronyms}[2]{%
+    \IfStrEq{\showAcronyms}{true}{#1}{#2}%
+}
+
+\newcommand{\ifShowFigures}[2]{%
+    \IfStrEq{\showFigures}{true}{#1}{#2}%
+}
+
+\newcommand{\ifShowTables}[2]{%
+    \IfStrEq{\showTables}{true}{#1}{#2}%
+}
+
+\newcommand{\ifShowListings}[2]{%
+    \IfStrEq{\showListings}{true}{#1}{#2}%
+}
+
+\newcommand{\ifShowGlossary}[2]{%
+	\IfStrEq{\showGlossary}{true}{#1}{#2}%
+}
+
+\newcommand{\ifShowAppendix}[2]{%
+    \IfStrEq{\showAppendix}{true}{#1}{#2}%
+}
+
+\newcommand{\ifShowDeclaration}[2]{%
+    \IfStrEq{\showDeclartion}{true}{#1}{#2}%
+}
 
 
 % ifSpecialDocument definition

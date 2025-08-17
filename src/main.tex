@@ -9,7 +9,7 @@
 %%
 %% IU Internationale Hochschule - Template for Thesis
 %%
-%% Bevor usisng this template please have a look at the REAMDME.md file
+%% Bevor using this template please have a look at the REAMDME.md file
 %%
 %%**************************************************************
 \input{ads/header}
@@ -27,20 +27,23 @@
 \pagenumbering{Roman}
 
 % Restriction notices
-\ifUseCompany{%
+\ifShowCompany{%
   \input{ads/restrictionNotices}
   \newpage
 }%
 
 % Aknowldgements
-\ifUseAcknowledments{%
+\ifShowAcknowledments{
   \input{ads/acknowledments}
   \newpage
 }%
 
 % Abstract
-\input{content/abstract}
-\newpage
+\ifShowAbstract{
+    \input{content/abstract}
+    \newpage
+}
+
 
 % only page number in footer
 \pagestyle{plain}
@@ -62,20 +65,31 @@
 \newpage
 
 % Acronyms
-\cleardoublepage
-\input{content/acronyms}
+\ifShowAcronyms{
+    \cleardoublepage
+    \input{content/acronyms}
+}
+
 
 % List of Figures
-\cleardoublepage
-\listoffigures
+\ifShowFigures{
+    \cleardoublepage
+    \listoffigures
+}
 
 %List of Tables
-\cleardoublepage
-\listoftables
+\ifShowTables{
+    \cleardoublepage
+    \listoftables
+}
+
 
 % List of Listings
-\cleardoublepage
-\lstlistoflistings
+\ifShowListings{
+    \cleardoublepage
+    \lstlistoflistings
+}
+
 \cleardoublepage
 
 \pagenumbering{arabic}
@@ -101,19 +115,29 @@
 \printbibliography
 
 % Glossar
-\cleardoublepage
-\printglossary[style=altlist,title=\glossaryPhrase]
-\input{content/glossary}
+\ifShowGlossary{
+    \cleardoublepage
+    \printglossary[style=altlist,title=\glossaryPhrase]
+    \input{content/glossary}
+}
+
 
 % Appendix
-\clearpage
-\appendix
-\input{content/appendix}
+\ifShowAppendix{
+    \clearpage
+    \appendix
+    \renewcommand{\thechapter}{\Alph{chapter}}
+    \renewcommand{\thesection}{\Alph{section}}
+    \renewcommand{\thefigure}{\Alph{section}.\arabic{figure}}
+    \input{content/appendix}
+}
+
 
 % Declaration
-\clearpage
-\input{ads/declaration}
-\newpage
-
-
+\ifShowDeclaration{
+    \clearpage
+    \input{ads/declaration}
+    \newpage
+}
+    
 \end{document}

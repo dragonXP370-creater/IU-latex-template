@@ -1,51 +1,106 @@
 %!TEX root = ../main.tex
 
-%% Document language (en, de)
+% Dokumentensprache (de, en)
+% Document language (en, de)
 \newcommand{\documentLanguage}{de}
 
-%% Document type
-% T Term Paper
-% S Seminar Paper
-% B Bachelor Thesis
-% M Master Thesis
+% Dokumententyp
+% Document type
+% T Term Paper || Hausarbeit
+% S Seminar Paper || Seminararbeit
+% B Bachelor Thesis || Bachelorarbeit
+% M Master Thesis || Masterarbeit
 \newcommand{\documentType}{M}
 
+% Ob die Arbeit mehrere Autoren hat / Whether multiple authors written this paper
 \newcommand{\multipleAuthors}{false}
+% Autor der Arbeit / Author of the document
 \newcommand{\documentAuthor}{Max Mustermann}
+% Titel der Arbeit / Title of the document
 \newcommand{\documentTitle}{Titel der Arbeit}
+% Dauer der Arbeit / Duration of the document
 \newcommand{\documentPeriod}{6 Monate}
+% E-Mail des Autors / Email of the author
 \newcommand{\eMailAuthor}{max.mustermann@iu-study.org}
 
+% Zeigt die Dauer der Arbeit an / Shows the duration of the document
+\newcommand{\showDocumentPeridod}{false}
+
+% Straße des Autors / Street of the author
 \newcommand{\authorStreet}{Musterstraße}
+% Straßennummer des Autors / Street number of the author
 \newcommand{\authorStreetNr}{1}
+% Postleitzahl des Autors / Postal code of the author
 \newcommand{\authorPostageNumber}{12345}
+% Stadt des Autors / City of the author
 \newcommand{\authorCity}{Musterstadt}
 
+% Matrikelnummer des Autors / Matriculation number of the author
 \newcommand{\matriculationNumber}{1234510}
 
+% Name der Universität / Name of the university
 \newcommand{\locationUniversity}{Internationale Hochschule}
+% Art des Studiums / Type of study
 \newcommand{\studyType}{Fernstudium}
+% Fachbereich / Department
 \newcommand{\department}{M.A. Informatik}
+% Kurs / Course
 \newcommand{\course}{Schreiben der Masterarbeit}
 
+% Abschlussgrad / Degree
 \newcommand{\degree}{Master of Science}
 
+% Eine Vorlesung, für die das Dokument geschrieben wurde
 % A lecture that the document is written for
 \newcommand{\lecture}{Software Engineering}
+% Ob die Vorlesung auf dem Deckblatt angezeigt werden soll
 % Whether to show the lecture on cover
 \newcommand{\showLecture}{false}
 
-\newcommand{\releaseDate}{September 20XX}
+% Aktuelle Aufgabe / Current task
+\newcommand{\currentTask}{1: Schreiben einer Arbeit}
+
+% Veröffentlichungsdatum / Release date
+\newcommand{\releaseDate}{01.01.2025}
+% Veröffentlichungsort / Release location
 \newcommand{\releaseLocation}{Online}
 
-% If the thesis is written in coorpation with a company
-\newcommand{\useCompany}{false}
+% Wenn die Arbeit in Zusammenarbeit mit einem Unternehmen geschrieben wurde
+% If the thesis is written in cooperation with a company
+\newcommand{\showCompany}{false}
+% Name des Unternehmens / Company name
 \newcommand{\companyName}{Firma GmbH}
+% Standort des Unternehmens / Company location
 \newcommand{\companyLocation}{Firmenort}
 
-\newcommand{\useAcknowledments}{true}
+% Betreuer / Tutor
+\newcommand{\tutor}{Dipl.-Ing.\ Martina Musterfrau}
+% Prüfer / Evaluator
+\newcommand{\evaluator}{Prof. Dr.\ Albert Einstein}
 
-\newcommand{\tutor}{Dipl.-Ing.~(FH) Luke Skywalker}
-\newcommand{\evaluator}{Prof. Dr.\ Darth Vader}
+% Ob der Betreuer verwendet wird / Whether the tutor is used
+\newcommand{\showTutor}{false}
+% Ob der Prüfer verwendet wird / Whether the evaluator is used
+\newcommand{\showEvaluator}{false}
 
+% Ob Danksagungen verwendet werden / Whether acknowledgments are used
+\newcommand{\showAcknowledments}{true}
+% Ob ein Abstract gezeigt wird / Whether an abstract is shown
+\newcommand{\showAbstract}{true}
+% Ob Abkürzungen gezeigt werden / Whether acronyms are shown
+\newcommand{\showAcronyms}{true}
+% Ob Abbildungen gezeigt werden / Whether figures are shown
+\newcommand{\showFigures}{true}
+% Ob Tabellen gezeigt werden / Whether tables are shown
+\newcommand{\showTables}{true}
+% Ob Listings gezeigt werden / Whether listings are shown
+\newcommand{\showListings}{true}
+% Ob Glossar gezeigt werden / Whether Glossary are shown
+\newcommand{\showGlossary}{false}
+% Ob ein Anhang gezeigt wird / Whether an appendix is shown
+\newcommand{\showAppendix}{true}
+% Ob eine Eidesstattliche Erklärung gezeigt wird / Whether a declaration is shown
+\newcommand{\showDeclartion}{false}
+
+% Farbe der Links / Color of links
 \newcommand{\linkColor}{00007A}
