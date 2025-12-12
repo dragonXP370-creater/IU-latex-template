@@ -174,6 +174,8 @@ Click *Finish*
 
 ![TeX Live for Windows](Documentation/28.png)
 
+[//]: # (TODO &#40;finish Installation Guide&#41;)
+
 ## Templatestruktur
 
 Das Template ist im Wesentlichen in 6 Teile unterteilt:
