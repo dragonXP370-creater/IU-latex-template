@@ -1,58 +1,72 @@
 %!TEX root = ../main.tex
 
 \begin{titlepage}
-	\begin{center}
-		\includegraphics[height=5cm]{images/cover/iu_Logo_D_black_RGB_horizontal.jpg}
-	\end{center}
-	\enlargethispage{20mm}
-	\begin{center}
+    \begin{center}
+        \includegraphics[height=5cm]{images/cover/iu_Logo_D_black_RGB_horizontal.jpg}
+    \end{center}
+    \enlargethispage{20mm}
+    \begin{center}
 
-		\vspace*{12mm}	{\large\textbf {\documentTypePhrase}}\\
+        \vspace*{12mm}    {\large\textbf {\documentTypePhrase}}\\
 
-		\IfStrEq{\showLecture}{true}{
-			\vspace*{12mm}	\lecturePhrase\\
-			\vspace*{0mm}		{\textbf \lecture}\\
-		}
+        \IfStrEq{\showLecture}{true}{
+            \vspace*{12mm}    \lecturePhrase\\
+            \vspace*{0mm}        {\textbf \lecture}\\
+        }
 
-		\vspace*{12mm}	 \locationUniversity{} \studyType\\
-		\vspace*{0mm}	\departmentPhrase{} \department\\
+        \vspace*{12mm}     \locationUniversity{} \studyType\\
+		\vspace*{0mm}   \coursePhrase{} \course\\
+		\vspace*{0mm}   \taskPhrase \currentTask\\
+        \vspace*{0mm}    \departmentPhrase{} \department\\
 
-		\doublespacing{
-			\vspace*{12mm}	{\LARGE\textbf \documentTitle }}\\
+        \doublespacing{
+            \vspace*{12mm}    {\LARGE\textbf \documentTitle }}\\
 		
-		%\vspace*{12mm}	\documentAuthorPhrase\\
-		%\vspace*{3mm}		{\large\textbf \documentAuthor}\\
-		%\vspace*{12mm} \releasePhrase\\
-		%\vspace*{3mm}	\releaseDate\\
-	\end{center}
-	\vfill
-	\begin{spacing}{1.2}
-		\begin{tabbing}
-			mmmmmmmmmmmmmmmmmmmmmmmmmm             \= \kill
-            
-			% uncomment next line for periodPhase
-			% \textbf{\documentPeriodPhrase}       \>  \documentPeriod\\
-			\textbf{\documentAuthorPhrase} \>   \documentAuthor\\
-			\textbf{\documentAuthorAddress}  \>  \authorStreet~\authorStreetNr\\
-			\textbf{\documentAuthorCity}  \>  \authorPostageNumber~\authorCity\\
-			\textbf{\matriculationNumberPhrase}  \>  \matriculationNumber\\
+    \end{center}
+    \vfill
 
-			\\ % Fügt eine leere Zeile ein
+    \begin{center}
+        \begin{minipage}{0.8\textwidth} % Adjust width as needed
+            \begin{spacing}{1.2}
+                \begin{tabbing}
+                    mmmmmmmmmmmmmmmmmmmmmmmmmm             \= \kill
 
-			% \textbf{\tutorPhrase}               \>  \tutor\\
-			\textbf{\evaluatorPhrase}              \>  \evaluator\\
+                    % Show the document Period on the Cover
+                    \ifShowDocumentPeriod{%
+                        \textbf{\documentPeriodPhrase}       \>  \documentPeriod\\
+                    }
+                    % \textbf{\documentPeriodPhrase}       \>  \documentPeriod\\
+                    \textbf{\documentAuthorPhrase} \>   \documentAuthor\\
+                    \textbf{\documentAuthorAddress}  \>  \authorStreet~\authorStreetNr\\
+                    \textbf{\documentAuthorCity}  \>  \authorPostageNumber~\authorCity\\
+                    \textbf{\matriculationNumberPhrase}  \>  \matriculationNumber\\
 
-			\\ % Fügt eine leere Zeile ein
+                    \\ % Fügt eine leere Zeile ein
 
-			\textbf{\releasePhrase}  \>  \releaseDate\\
+                    % Show the tutor on the cover
+                    \ifShowTutor{%
+                        \textbf{\tutorPhrase} \> \tutor\\
+                    }
+                    
+                    % Show the evalurator on the cover   
+                    \ifShowEvaluator{%
+                        \textbf{\evaluatorPhrase} \> \evaluator\\
+                    }
+                    
 
-			\\ % Fügt eine leere Zeile ein
+                    \\ % Fügt eine leere Zeile ein
 
-			\ifUseCompany{%
-			\textbf{\companyPhrase}                  \>  \companyName, \companyLocation\\%
-			}
+                    \textbf{\releasePhrase}  \>  \releaseDate\\
 
-			
-		\end{tabbing}
-	\end{spacing}
+                    \\ % Fügt eine leere Zeile ein
+
+                    \ifShowCompany{%
+                        \textbf{\companyPhrase}                  \>  \companyName, \companyLocation\\%
+                    }
+
+
+                \end{tabbing}
+            \end{spacing}
+        \end{minipage}
+    \end{center}
 \end{titlepage}

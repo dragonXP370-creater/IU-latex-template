@@ -2,13 +2,179 @@
 
 Template auf Basis von  [DHBW Mosbach LaTeX Template](https://github.com/Siphalor/dhbw-mosbach-latex-template)
 
-Angepasst an die Anforderungen der IU Internationale Hochschule
+Orientiert an dem Leitfaden der IU Internationalen Hochschule. <br>
+Dieses Template enthält keine Garantie, dass es korrekt ist.
 
 **Inhalt:**
+* [Setup](#installation)
 * [Templatestruktur](#templatestruktur)
 * [Document Types](#document-types)
 * [Komponenten einer Wissenschaftlichen Arbeit](#komponenten-einer-wissenschaftlichen-arbeit)
 * [Contributors](#contributors)
+
+## Setup
+Note:
+This is the setup that works for me.<br>
+There might be simpler or more efficient solutions. 
+If you find those, please let me know. <br>
+This setup will go over every step in the installation, because it is amid at beginners to LaTeX and Git.
+
+
+### Install TexLive
+**Note: This installation is right now for Windows only. I will add Linux in the future.**
+
+Go to TeX Live Website: [TeX Live](https://tug.org/texlive/)
+
+Choose your Operating System
+![TeX Live](Documentation/01.png)
+
+Install for Windows
+
+![TeX Live for Windows](Documentation/02.png)
+
+Download for Easy installation
+
+![Easy Install](Documentation/03.png)
+
+You will find the installer in your downloads folder.
+Click on it to install it.
+
+![Installer](Documentation/04.png)
+
+If you get this Popup, click: *Weitere Informationen*
+
+![PopUp](Documentation/05.png)
+
+Now click on *Trotzdem ausführen*
+
+![PopUp](Documentation/06.png)
+
+Now the installer opens.
+Choose *Install* and click on *Next*
+
+![TeX Live installer](Documentation/07.png)
+
+Now click *Install*
+
+![TeX Live for Windows](Documentation/08.png)
+
+A second window should show up.
+Here also click on *Installation*
+
+![TeX Live for Windows](Documentation/09.png)
+
+Now the installation is in progress. It will take a while.
+
+![TeX Live for Windows](Documentation/10.png)
+
+### Install Git
+Go to Git Website: [Git](https://git-scm.com/downloads)
+
+Click *Download for Windows*
+![TeX Live for Windows](Documentation/11.png)
+
+Click *here to download*
+![TeX Live for Windows](Documentation/12.png)
+
+You find the installer in your downloads folder again
+
+![TeX Live for Windows](Documentation/13.png)
+
+Click *Next*
+
+![TeX Live for Windows](Documentation/14.png)
+
+Click *Next*
+
+![TeX Live for Windows](Documentation/15.png)
+
+Make Sure all these options are set:
+- Windows Explorer integration
+  - Open Git Bash here
+  - Open Git GUI here
+- GIT LFS (Large File Support)
+- Associate .git* configuration files with the default text editor
+- Associate .sh files to be run with Bash
+- Optional: (NEW!) Scalar (Git add-on to manage large-scale repositories)
+
+Click *Next*
+
+![TeX Live for Windows](Documentation/16.png)
+
+Click *Next*
+
+![TeX Live for Windows](Documentation/17.png)
+
+
+The default editor is Vim. <br>
+That this tto something else. <br>
+In this case, I use Notepad++ <br>
+
+Click *Next*
+
+![TeX Live for Windows](Documentation/18.png)
+
+Choose *Override the default branch name for new repositories* <br>
+Type in *main*
+
+Click *Next*
+
+![TeX Live for Windows](Documentation/19.png)
+
+Choose *Git from the command line and also 3rd-party software* 
+
+Click *Next*
+
+![TeX Live for Windows](Documentation/20.png)
+
+Choose *Use bundled OpenSSH*
+
+Click *Next*
+
+![TeX Live for Windows](Documentation/21.png)
+
+Choose *Use the native Windows Secure Channel library*
+
+Click *Next*
+
+![TeX Live for Windows](Documentation/22.png)
+
+Choose *Checkout Windows-style, commit Unix-style line endings*
+
+Click *Next*
+
+![TeX Live for Windows](Documentation/23.png)
+
+Choose *MinTTY (the default terminal of MSYS2)*
+
+Click *Next*
+
+![TeX Live for Windows](Documentation/24.png)
+
+Choose *Fast-forward on merge*
+
+Click *Next*
+
+![TeX Live for Windows](Documentation/25.png)
+
+Choose *Git Credential Manager*
+
+Click *Next*
+
+![TeX Live for Windows](Documentation/26.png)
+
+Select *Enable file system caching*
+
+Click *Install*
+
+![TeX Live for Windows](Documentation/27.png)
+
+After it is installed <br>
+Click *Finish*
+
+![TeX Live for Windows](Documentation/28.png)
+
+[//]: # (TODO &#40;finish Installation Guide&#41;)
 
 ## Templatestruktur
 
