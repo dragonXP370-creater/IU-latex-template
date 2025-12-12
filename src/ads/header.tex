@@ -4,11 +4,12 @@
 \RequirePackage[l2tabu, orthodox]{nag}
 
 \documentclass[
+	a4paper,
 	pdftex,
 	oneside,
 	11pt,			    % fontsize
 	parskip=half,		    % Space (in lines) between paragraphs
-	headheight = 12pt,    % Header hight
+	%headheight = 12pt,    % Header hight
 	headsepline,		    % Line after header
 	footheight = 16pt,	    % Footer height
 	footsepline,		    % Line before footer
@@ -22,8 +23,12 @@
 ]{scrreprt}	                     % Koma-Script report-class, long document: scrreprt, short document: scrbook
 
 \usepackage{xstring}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
 \usepackage[Renderer=Basic]{fontspec}
 \setmainfont{Arial}
+\setsansfont{Arial}
 
 % iflang command definition
 \newcommand{\iflang}[2]{%
@@ -120,7 +125,7 @@
 
 %%%%%%% Package Includes %%%%%%%
 
-\usepackage[margin=\margin,foot=1cm]{geometry}
+\usepackage[a4paper,margin=\margin,foot=1cm]{geometry}
 \usepackage[activate]{microtype}
 \usepackage[onehalfspacing]{setspace}
 \usepackage{makeidx}
